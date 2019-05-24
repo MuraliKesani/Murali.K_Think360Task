@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2A3810D63A2CB1255AF501 /* Pods_Murali_K_Think360Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7234C89EBAD7F99E64788C47 /* Pods_Murali_K_Think360Task.framework */; };
 		9634C6AB2297A29100F9F71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634C6AA2297A29100F9F71F /* AppDelegate.swift */; };
-		9634C6AD2297A29100F9F71F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634C6AC2297A29100F9F71F /* ViewController.swift */; };
 		9634C6B02297A29100F9F71F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9634C6AE2297A29100F9F71F /* Main.storyboard */; };
 		9634C6B22297A29C00F9F71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9634C6B12297A29C00F9F71F /* Assets.xcassets */; };
 		9634C6B52297A29C00F9F71F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9634C6B32297A29C00F9F71F /* LaunchScreen.storyboard */; };
+		9634C6BD2297ABC900F9F71F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634C6BC2297ABC900F9F71F /* TableViewCell.swift */; };
+		9634C6BE2297CD8400F9F71F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634C6AC2297A29100F9F71F /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7234C89EBAD7F99E64788C47 /* Pods_Murali_K_Think360Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Murali_K_Think360Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9212F766B5E5143E665FCAB0 /* Pods-Murali.K_Think360Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Murali.K_Think360Task.release.xcconfig"; path = "Pods/Target Support Files/Pods-Murali.K_Think360Task/Pods-Murali.K_Think360Task.release.xcconfig"; sourceTree = "<group>"; };
 		9634C6A72297A29100F9F71F /* Murali.K_Think360Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murali.K_Think360Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9634C6AA2297A29100F9F71F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9634C6AC2297A29100F9F71F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		9634C6B12297A29C00F9F71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9634C6B42297A29C00F9F71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9634C6B62297A29C00F9F71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9634C6BC2297ABC900F9F71F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9A51824FF0F2C5094BFDF3B2 /* Pods-Murali.K_Think360Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Murali.K_Think360Task.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Murali.K_Think360Task/Pods-Murali.K_Think360Task.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E2A3810D63A2CB1255AF501 /* Pods_Murali_K_Think360Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24DE0786537975CE4CE8E75F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A51824FF0F2C5094BFDF3B2 /* Pods-Murali.K_Think360Task.debug.xcconfig */,
+				9212F766B5E5143E665FCAB0 /* Pods-Murali.K_Think360Task.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9634C69E2297A29000F9F71F = {
 			isa = PBXGroup;
 			children = (
 				9634C6A92297A29100F9F71F /* Murali.K_Think360Task */,
 				9634C6A82297A29100F9F71F /* Products */,
+				24DE0786537975CE4CE8E75F /* Pods */,
+				B0E51518B573B8492662342C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +73,38 @@
 			isa = PBXGroup;
 			children = (
 				9634C6AA2297A29100F9F71F /* AppDelegate.swift */,
-				9634C6AC2297A29100F9F71F /* ViewController.swift */,
-				9634C6AE2297A29100F9F71F /* Main.storyboard */,
+				9634C6C02297E14800F9F71F /* Controllers */,
+				9634C6BF2297E10A00F9F71F /* View */,
 				9634C6B12297A29C00F9F71F /* Assets.xcassets */,
 				9634C6B32297A29C00F9F71F /* LaunchScreen.storyboard */,
 				9634C6B62297A29C00F9F71F /* Info.plist */,
 			);
 			path = Murali.K_Think360Task;
+			sourceTree = "<group>";
+		};
+		9634C6BF2297E10A00F9F71F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9634C6AE2297A29100F9F71F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9634C6C02297E14800F9F71F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9634C6AC2297A29100F9F71F /* ViewController.swift */,
+				9634C6BC2297ABC900F9F71F /* TableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B0E51518B573B8492662342C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7234C89EBAD7F99E64788C47 /* Pods_Murali_K_Think360Task.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9634C6B92297A29C00F9F71F /* Build configuration list for PBXNativeTarget "Murali.K_Think360Task" */;
 			buildPhases = (
+				74F473D4B3C2E36E651D16C7 /* [CP] Check Pods Manifest.lock */,
 				9634C6A32297A29100F9F71F /* Sources */,
 				9634C6A42297A29100F9F71F /* Frameworks */,
 				9634C6A52297A29100F9F71F /* Resources */,
+				7C508846508D2C794927114E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +175,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74F473D4B3C2E36E651D16C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Murali.K_Think360Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C508846508D2C794927114E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Murali.K_Think360Task/Pods-Murali.K_Think360Task-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Murali.K_Think360Task/Pods-Murali.K_Think360Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9634C6A32297A29100F9F71F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9634C6AD2297A29100F9F71F /* ViewController.swift in Sources */,
+				9634C6BE2297CD8400F9F71F /* ViewController.swift in Sources */,
+				9634C6BD2297ABC900F9F71F /* TableViewCell.swift in Sources */,
 				9634C6AB2297A29100F9F71F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +375,7 @@
 		};
 		9634C6BA2297A29C00F9F71F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A51824FF0F2C5094BFDF3B2 /* Pods-Murali.K_Think360Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +393,7 @@
 		};
 		9634C6BB2297A29C00F9F71F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9212F766B5E5143E665FCAB0 /* Pods-Murali.K_Think360Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
